@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> People List  </title>
+
+</head>
+
+<body>
+    <h1> People List</h1>
+    <table border = '1'>
+        <tr>
+            <th> Full Name </th>
+            <th> Screen Name</th>
+            <th> Identity </th>
+        </tr>
+       {% for person in people %}
+        <tr>
+            <td> {{person.full_name}}</td>
+            <td> {{person.screen_name}}</td>
+            <td> {{person.identity}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
